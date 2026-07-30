@@ -907,10 +907,7 @@ Sub PreencherOperacoesIW39()
         
         Application.Wait (Now + TimeValue("0:00:02"))
         
-        session.findById("wnd[0]/usr/cntlGRID1/shellcont/shell").setCurrentCell -1, "GSTRP"
-        session.findById("wnd[0]/usr/cntlGRID1/shellcont/shell").SelectColumn "GSTRP"
-        session.findById("wnd[0]/tbar[1]/btn[40]").press
-        session.findById("wnd[0]").sendVKey 42
+        session.findById("wnd[0]/usr/cntlGRID1/shellcont/shell").selectAll
         
         Application.Wait (Now + TimeValue("0:00:02"))
         
